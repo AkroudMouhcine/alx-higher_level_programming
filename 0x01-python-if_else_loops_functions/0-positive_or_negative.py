@@ -7,5 +7,3 @@ elif number == 0:
     print(f"{number:d} is zeno")
 else:
     print(f"{number:d} is positive")
-
-
