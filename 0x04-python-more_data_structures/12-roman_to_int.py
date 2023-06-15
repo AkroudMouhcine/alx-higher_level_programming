@@ -2,14 +2,15 @@
 def roman_to_int(roman_string):
     if not isinstance(roman_string, str) or roman_string is None:
         return 0
-    roman_values = {'I': 1, 'V': 5, 'X': 10, 'L': 50, 'C': 100, 'D': 500, 'M': 1000}
-    converted_int = 0
-    previous_value = 0
+    roman_vals = {'I': 1, 'V': 5, 'X': 10,
+                  'L': 50, 'C': 100, 'D': 500, 'M': 1000}
+    conv_int = 0
+    prev_val = 0
     for char in reversed(roman_string):
-        value = roman_values[char]
-        if value >= previous_value:
-            converted_int += value
+        val = roman_vals[char]
+        if val >= prev_val:
+            conv_int += val
         else:
-            converted_int -= value
-        previous_value = value
-    return converted_int
+            conv_int -= val
+        prev_val = val
+    return conv_int
