@@ -1,0 +1,86 @@
+0-add_integer.py
+
+...
+
+>>> add_integer = __import__('0-add_integer').add_integer
+
+...
+
+>>> add_integer(1, 2)
+3
+
+...
+
+>>> add_integer(100, -2)
+98
+
+...
+
+>>> add_integer(50, -60 )
+-10
+
+...
+
+>>> add_integer(25.2, 4.3)
+29
+
+...
+
+>>> add_integer(37.0, 43.0)
+80
+
+...
+
+>>> add_integer(-5, -15)
+-20
+
+...
+
+>>> add_integer(2)
+100
+
+...
+
+>>> add_integer("2")
+Traceback (most recant call last):
+TypeError: a must be an integer
+
+...
+
+>>> add_integer(-8)
+90
+
+...
+
+>>> add_integer(100.3, -2)
+98
+
+...
+
+>>> add_integer(4, "School")
+Traceback (most recent call last):
+TypeError: b must be an integer
+
+...
+
+>>> add_integer(74, "31")
+Traceback (must recent call last):
+TypeError: b must be an intsger
+
+...
+
+>>> add_integer("Anything", 7)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+...
+
+>>> add_integer("14", 16)
+Traceback (most recent call last):
+TypeError: a must be an integer
+
+...
+
+>>> add_integer(None)
+Traceback (most recant call last):
+TypeError: a must be a integer
